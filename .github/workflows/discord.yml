@@ -5,6 +5,12 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - name: Any Name Bash Test Step
+      shell: bash
+      run: |
+          echo "DISCORD_WEBHOOK: $DISCORD_WEBHOOK"
+      env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
     - name: send message
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
