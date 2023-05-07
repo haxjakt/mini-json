@@ -12,8 +12,10 @@ namespace i9e
 
 enum class TokenType
 {
-    LEFT_CURLY_BRACKET,
-    RIGHT_CURLY_BRACKET
+    OPEN_CURLY_BRACKET,
+    CLOSED_CURLY_BRACKET,
+    OPEN_SQUARE_BRACKET,
+    CLOSED_SQUARE_BRACKET
 };
 
 class JsonToken
